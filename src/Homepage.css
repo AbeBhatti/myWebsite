@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #1f1f1f, #4a4a4a);
+    color: #aba9a9; /* Light text color */
+    font-family: Arial, sans-serif; /* Font for the text */
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+    border: none; /* Remove borders */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 5px; /* Optional: rounded corners */
+    margin-bottom: 20px; /* Space between text boxes */
+}
+
+.header {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 1.25em;
+    position: relative; /* Make this relative to position child elements */
+}
+
+.profile-container {
+    position: relative; /* Ensure this container is relative */
+}
+
+.profile-pic {
+    width: 250px; /* Adjust size */
+    height: 240px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make it circular */
+    position: absolute; /* Position absolute */
+    top: -15px; /* Adjust up */
+    left: 20px; /* Adjust left */
+    margin-right: 10px; /* Space between image and text */
+}
+
+
+
+.about {
+    padding: 20px;
+    margin-right: 50%;
+    text-align: center;
+    line-height: 2;
+}
+
+p1 {
+    font-size: 1.25em;
+}
+
+h2 {
+    color: #aba9a9; /* Header color for "About Me" */
+    text-align: center;
+}
+
+h3 {
+    color: #aba9a9; /* Header color for favorite sections */
+    margin-left: 20px;
+}
+
+.favorite-section {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-around; /* Space the subsections evenly */
+    margin: 20px 0; /* Space between the sections */
+
+}
+
+.favorite {
+    perspective: 1000px; /* Enables 3D effect */
+    margin: 0 10px; /* Space between boxes */
+}
+
+.favorite-inner {
+    position: relative;
+    width: 200px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    transition: transform 0.6s; /* Animation duration */
+    transform-style: preserve-3d; /* Preserve 3D for children */
+}
+
+.favorite:hover .favorite-inner {
+    transform: rotateY(180deg); /* Rotate on hover */
+}
+
+.favorite-front, .favorite-back {
+    position: absolute;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    backface-visibility: hidden; /* Hide the back side when facing away */
+    background: linear-gradient(to top, #1f1f1f, #4a4a4a);
+}
+
+.favorite-front {
+    background-color: #aba9a9; /* Dark background for front */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    font-size: 20px; 
+    color: #949494; /* Text color for front */
+}
+
+.favorite-back {
+    background-color: #aba9a9; /* Dark background for back */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content */
+    align-items: center; /* Center content */
+    color: #aba9a9; /* Light text color */
+    transform: rotateY(180deg); /* Start back side facing */
+}
+
+.favorite-image {
+    width: 100%; /* Makes the image responsive */
+    height: 175px; /* Fixed height for images */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Additional styles for navigation */
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    background-color: #aba9a9; /* Change color on hover */
+}
+.all-skills{
+    margin-top:-250px;
+}
+
+.skills-header {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.skills-section, .other-skills-section {
+    padding: 20px;
+    margin-left: 50%;
+}
+
+
+.skills-container, .other-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.skill-button, .other-skill-button {
+    background-color: #666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.skill-button:hover, .other-skill-button:hover {
+    background-color: #888;
+}
+
+.skill-button:active, .other-skill-button:active {
+    background-color: #444;
+}
+
+
+.skills-page {
+
+    min-height: 100vh;
+    background: transparent; /* Remove individual gradient */
+    padding: 20px; /* Add padding for spacing */
+}

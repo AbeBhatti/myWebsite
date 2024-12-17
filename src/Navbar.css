@@ -1,0 +1,29 @@
+.navbar {
+    background: transparent; /* Make navbar background transparent */
+    color: #e0e0e0; /* Text color */
+    padding: 10px 20px; /* Adjust padding for spacing */
+    position: relative; /* Allow positioning */
+    z-index: 100; /* Ensure it stays above other elements */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-end; /* Align items to the right */
+    font-size: 15px;
+}
+
+.nav-links {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.nav-links li {
+    display: inline; /* Display links in a row */
+    margin: 0 5px; /* Space between links */
+}
+
+.nav-links a {
+    color: #e0e0e0; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.nav-links a:hover {
+    color: #aba9a9; /* Change color on hover for visibility */
+}

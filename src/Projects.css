@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #1f1f1f, #4a4a4a);
+    color: #e0e0e0; /* Consistent text color */
+    font-family: Arial, sans-serif; /* Consistent font */
+    font-size: 15px;
+}
+
+.projects {
+    display: flex; /* Use flexbox for layout */
+    min-height: 100vh;
+    background: transparent; /* Remove individual gradient */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.robot-room {
+    position: relative;
+    top: 100px;
+    left: -15px;
+    width: 35.5%; /* Half of the screen width */
+    height: 400px; /* Adjust height to prevent scrolling */
+    border: 2px solid #000;
+    margin: 20px; /* Space around robot area */
+    overflow: hidden; /* Prevent scrolling */
+    background-color: rgba(255, 255, 255, 0.206); /* Slightly transparent background */
+    border-radius: 5px; /* Rounded corners */
+}
+.instructions-popup {
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    transform: translateY(-50%);
+    background-color: rgba(102, 96, 96, 0.7);
+    color: rgb(206, 194, 194);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 20;
+    width: 300px;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+
+.wall {
+    background-color: #000; /* Wall color */
+    z-index: 10; /* Ensure walls are on top of everything */
+}
+
+.robot {
+    position: absolute;
+    transition: transform 0.1s; /* Smooth rotation */
+}
+
+.project-circle {
+    position: absolute;
+    width: 40px; /* Increased circle size */
+    height: 40px; /* Increased circle size */
+    border-radius: 50%;
+    overflow: hidden; /* Ensures the image fits */
+    cursor: pointer; /* Indicate clickability */
+}
+
+.project-image {
+    width: 100%; /* Ensures image fits the circle */
+    height: 100%; /* Ensures image fits the circle */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.project-info {
+    flex: 1; /* Take remaining space on the right */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    color: #d4d3d3
+}
+
+.project-info-content {
+    text-align: center;
+}
+
+.project-info-image {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px;
+    max-height: 200px; /* Increased max height for images */
+}
+
+.project-info-description {
+    font-size: 16px; /* Increased font size for better visibility */
+}
+
+.instructions-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.instructions-button:hover {
+    background-color: #aba9a9;
+}
+
+.instructions-button:active {
+    background-color: #388e3c; /* Even darker green when active */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px); /* Slight movement on click */
+}
+
+header {
+    padding: 40px 0; /* Vertical padding for spacing */
+    color: #e0e0e0; /* Consistent text color */
+    text-align: center;
+    position: absolute; /* Absolute position to allow centering */
+    margin-top: -30px; /* Position it at the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust the horizontal position to truly center */
+    width: 100%; /* Ensure it takes up the full width */
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+}
+.project-title {
+    text-align: center; /* Center the title text */
+    margin: 20px 0; /* Add some vertical spacing */
+}
