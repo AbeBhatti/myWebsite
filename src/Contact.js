@@ -1,79 +1,31 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import "./Contact.css";
-import image1 from "./assets/link.webp";
-import image2 from "./assets/mail.png";
-import image3 from "./assets/resume.webp";
-import image4 from "./assets/github.png";
+import { Link } from "react-router-dom"; 
+import "./Contact.css"; 
+import image1 from "./assets/link.webp"; 
+import image2 from "./assets/mail.png"; 
+import image3 from "./assets/resume.webp"; 
+import image4 from "./assets/github.png"; // Added import for GitHub image
 
 function Contact() {
     const [isModalOpen, setModalOpen] = useState(false);
-    const BASE_URL = process.env.REACT_APP_API_URL;
     const [formData, setFormData] = useState({
         name: "",
         email: "",
         subject: "",
-        message: "",
+        message: ""
     });
-    const [isSending, setIsSending] = useState(false);
-    const [feedbackMessage, setFeedbackMessage] = useState(""); // For feedback messages
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
 
-    const validateForm = () => {
-        const { name, email, subject, message } = formData;
-        if (!name || !email || !subject || !message) {
-            alert("Please fill out all fields.");
-            return false;
-        }
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            alert("Please enter a valid email address.");
-            return false;
-        }
-        return true;
-    };
-
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-
-        if (!validateForm()) return;
-
-        setIsSending(true);
-        setFeedbackMessage(""); // Clear previous feedback
-
-        try {
-            const response = await fetch(BASE_URL, { // Backend endpoint
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(formData),
-            });
-
-            // Check if the response status is not OK
-            if (!response.ok) {
-                const errorDetails = await response.json();
-                setFeedbackMessage(`Error: ${errorDetails.error || 'An unexpected error occurred'}`);
-                throw new Error(errorDetails.error || 'Unknown error');
-            }
-
-            const result = await response.json();
-
-            if (result.success) {
-                setFeedbackMessage("Your email has been sent successfully!");
-                setModalOpen(false);
-                setFormData({ name: "", email: "", subject: "", message: "" });
-            } else {
-                setFeedbackMessage("Failed to send your email. Please try again later.");
-            }
-        } catch (error) {
-            console.error("Error sending email:", error);
-            setFeedbackMessage("An error occurred while sending your email. Please try again.");
-        } finally {
-            setIsSending(false);
-        }
+        // Simulate sending email
+        alert("Email sent! (This is just a placeholder.)");
+        setModalOpen(false); // Close the modal
+        setFormData({ name: "", email: "", subject: "", message: "" }); // Reset form
     };
 
     return (
@@ -89,10 +41,10 @@ function Contact() {
                     </a>
                 </div>
                 <div className="image-wrapper">
-                    <div onClick={() => setModalOpen(true)} style={{ cursor: "pointer" }}>
+                    <div onClick={() => setModalOpen(true)} style={{ cursor: 'pointer' }}>
                         <div className="image-hover">
                             <img src={image2} alt="Email Me" />
-                            <div className="overlay">Send Email!</div>
+                            <div className="overlay">Show Email</div>
                         </div>
                     </div>
                 </div>
@@ -151,15 +103,8 @@ function Contact() {
                                 onChange={handleInputChange}
                                 required
                             />
-                            <button type="submit" disabled={isSending}>
-                                {isSending ? "Sending..." : "Send"}
-                            </button>
+                            <button type="submit">Send</button>
                         </form>
-                        {feedbackMessage && (
-                            <div className={`feedback ${isSending ? 'loading' : ''}`}>
-                                {feedbackMessage}
-                            </div>
-                        )}
                     </div>
                 </div>
             )}
