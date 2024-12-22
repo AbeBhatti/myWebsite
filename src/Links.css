@@ -1,4 +1,4 @@
-.contact {
+.links {
     background: transparent;
     padding: 20px;
     min-height: 100vh;
@@ -10,7 +10,7 @@
     text-align: center; /* Center-align the text */
     font-size: 13px; /* Base font size */
 }
-.contact h1 {
+.links h1 {
     color: #e0e0e0; /* Consistent text color */
     font-family: Arial, sans-serif; /* Same font */
     text-align: center; /* Center-align the text */

@@ -7,7 +7,7 @@ import image3 from "./assets/github.png"; // Added import for GitHub image
 
 function Links() {
     return (
-        <div className="contact">
+        <div className="links">
             <h1>Links</h1>
             <div className="image-container">
                 <div className="image-wrapper">
