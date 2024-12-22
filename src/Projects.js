@@ -184,20 +184,7 @@ function Projects() {
     };
 
     useEffect(() => {
-        const handleClickOutside = (event) => {
-            const popup = document.querySelector('.project-info');
-            if (popup && !popup.contains(event.target)) {
-                closePopup();
-            }
-        };
 
-        if (selectedProject) {
-            window.addEventListener('click', handleClickOutside);
-        }
-
-        return () => {
-            window.removeEventListener('click', handleClickOutside);
-        };
     }, [selectedProject]);
 
     return (
@@ -261,7 +248,10 @@ function Projects() {
             )}
             <button 
             className="instructions-button" 
-            onClick={() => setShowInstructions(true)}
+            onClick={() => {
+                setShowInstructions(true); 
+                closePopup();
+            }}
             style={{
                 position: 'fixed',
                 bottom: '10px',
