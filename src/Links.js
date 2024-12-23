@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Links.css"; 
 import image1 from "./assets/link.webp"; 
 import image2 from "./assets/resume.webp"; 
-import image3 from "./assets/github.png"; // Added import for GitHub image
+import image3 from "./assets/github.png"; 
 
 function Links() {
     return (
