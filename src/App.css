@@ -2,22 +2,22 @@
   text-align: center;
 }
 body {
-  margin-top: 20px; /* Consistent space above headers */
-  margin-bottom: 20px; /* Consistent space below headers */
-  background: linear-gradient(to bottom, #1f1f1f, #4a4a4a); /* Uniform background */
-  color: #e0e0e0; /* Consistent text color */
-  font-family: Arial, sans-serif; /* Uniform font */
-  font-size: 16px; /* Consistent font size across pages */
+  margin-top: 20px; 
+  margin-bottom: 20px;
+  background: linear-gradient(to bottom, #1f1f1f, #4a4a4a); 
+  color: #e0e0e0; 
+  font-family: Arial, sans-serif; 
+  font-size: 16px;
 }
 
 
 
 body {
     margin: 0;
-    background: linear-gradient(to bottom, #1f1f1f, #4a4a4a); /* Uniform background */
-    color: #e0e0e0; /* Consistent text color */
-    font-family: Arial, sans-serif; /* Uniform font */
-    font-size: 16px; /* Consistent font size across pages */
+    background: linear-gradient(to bottom, #1f1f1f, #4a4a4a); 
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    font-size: 16px; 
 }
 
 

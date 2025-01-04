@@ -1,34 +1,30 @@
-/* Work Experience Section */
 .work-experience {
-    background: transparent; /* Maintain transparency */
-    color: #e0e0e0; /* Text color */
-    padding: 20px; /* Space inside the section */
-    min-height: 100vh; /* Full viewport height */
-    display: flex; /* Align items */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
+    background: transparent;
+    color: #e0e0e0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     font-size: 13.5px;
 }
 
-/* Main Title (h1) in Work Experience Section */
 .work-experience h1 {
-    color: #e0e0e0; /* Consistent text color */
-    font-family: Arial, sans-serif; /* Same font */
-    text-align: center; /* Center-align the text */
-    margin-bottom: 20px; /* Space below the header */
-    position: relative; /* Allow control over positioning */
-    top: 15 px; /* Move 70px from the top of the screen */
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 28px; 
 }
 
-/* Circles Container Styling */
+
 .circles-container {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
 }
 
-/* Circle Styling */
 .circle {
     width: 130px;
     height: 130px;
@@ -36,7 +32,7 @@
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s;
-    margin: 0 20px; /* Adjust this value for wider gaps */
+    margin: 0 20px; 
 }
 
 .circle:hover {
@@ -46,10 +42,9 @@
 .circle-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the circle */
+    object-fit: cover;
 }
 
-/* Modal Styles */
 .modal {
     position: fixed;
     top: 0;
@@ -76,12 +71,12 @@
     position: relative;
     max-width: 300px;
     text-align: left;
-    display: flex; /* Make modal content a flex container */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
 }
 
 .modal-image {
-    width: 70%; /* Optional: Add styling for modal image */
-    margin-top: 20px; /* Optional: Add margin for spacing */
+    width: 70%; 
+    margin-top: 20px;
 }

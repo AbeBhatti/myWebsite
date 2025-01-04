@@ -144,7 +144,7 @@ function Projects() {
     };
 
     const handleKeyUp = () => {
-        clearInterval(moveIntervalRef.current); // stop the movement when the key is released
+        clearInterval(moveIntervalRef.current); 
         setMoving(false);
     };
 
@@ -175,7 +175,7 @@ function Projects() {
 
         if (foundProject && (!selectedProject || selectedProject.id !== foundProject.id)) {
             setSelectedProject(foundProject);
-            setShowInstructions(false); // Hide instructions when a project is selected
+            setShowInstructions(false); 
         }
     };
 
@@ -212,7 +212,7 @@ function Projects() {
                                 closePopup();
                             } else {
                                 setSelectedProject(project);
-                                setShowInstructions(false); // Hide instructions when a project is clicked
+                                setShowInstructions(false);
                             }
                         }}
                     >

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "./Extracurriculars.css"; // Import the CSS file for styles
-import acmImage from './assets/acm.png'; // Replace with actual image path
-import taekwondoImage from './assets/taekwondo.jpg'; // Replace with actual image path
-import musicImage from './assets/music.jpg'; // Replace with actual image path
-import soccerImage from './assets/soccer.avif'; // Replace with actual image path
-import csImage from './assets/cs.avif'; // Replace with actual image path
+import "./Extracurriculars.css"; 
+import acmImage from './assets/acm.png';
+import taekwondoImage from './assets/taekwondo.jpg'; 
+import musicImage from './assets/music.jpg'; 
+import soccerImage from './assets/soccer.avif';
+import csImage from './assets/cs.avif'; 
 
 function Extracurriculars() {
     const [selectedActivity, setSelectedActivity] = useState(null);
@@ -45,7 +45,6 @@ function Extracurriculars() {
         setSelectedActivity(null);
     };
 
-    // Effect to handle Escape key for closing modal
     useEffect(() => {
         const handleKeyPress = (event) => {
             if (event.key === "Escape") {
@@ -62,7 +61,6 @@ function Extracurriculars() {
         };
     }, [selectedActivity]);
 
-    // Close modal on clicking outside of it
     const handleBackgroundClick = (event) => {
         if (event.target.className === "modal") {
             handleCloseModal();

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "./WorkExperience.css"; // Import the CSS file for styles
-import psychiatryImage from './assets/psychiatry.jpg'; // Adjust the path as necessary
-import pizzaImage from './assets/pizza.jpg'; // Adjust the path as necessary
-import nickImage from './assets/nick.jpg'; // Adjust the path as necessary
-import palmerinosImage from './assets/palmerinos.jpg'; // Adjust the path as necessary
+import "./WorkExperience.css"; 
+import psychiatryImage from './assets/psychiatry.jpg'; 
+import pizzaImage from './assets/pizza.jpg';
+import nickImage from './assets/nick.jpg';
+import palmerinosImage from './assets/palmerinos.jpg'; 
 
 function WorkExperience() {
     const [selectedJob, setSelectedJob] = useState(null);
@@ -47,7 +47,6 @@ function WorkExperience() {
         setSelectedJob(null);
     };
 
-    // Effect to handle Escape key
     useEffect(() => {
         const handleKeyPress = (event) => {
             if (event.key === "Escape") {
@@ -64,7 +63,6 @@ function WorkExperience() {
         };
     }, [selectedJob]);
 
-    // Close modal on clicking outside of it
     const handleBackgroundClick = (event) => {
         if (event.target.className === "modal") {
             handleCloseModal();
