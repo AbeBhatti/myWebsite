@@ -7,11 +7,13 @@ import Links from "./Links";
 import Resume from "./Resume";
 import Extracurriculars from "./Extracurriculars";
 import WorkExperience from "./WorkExperience";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <Analytics /> 
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/projects" element={<Projects />} />
