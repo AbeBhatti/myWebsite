@@ -240,12 +240,13 @@ function Projects() {
             {/* Instructions popup */}
             {showInstructions && (
                 <div className="instructions-popup">
-                    <p>Welcome! This maze showcases my different projects.</p>
-                    <p>Click/hold the arrow keys to move the robot through the maze and explore my work</p>
-                    <p>You can also click on each circle to read about them.</p>
-                    <p>Enjoy!</p>
+                    <p>Welcome! This maze showcases my different projects. Use the arrow keys to move the robot through the maze and explore my work You can also click on each circle to read about them.Enjoy!</p>
                 </div>
             )}
+            <div className = "RobotInstructions">
+                <h2>Click/hold the arrow keys to move the robot!</h2>
+            </div>
+
             <button 
             className="instructions-button" 
             onClick={() => {
