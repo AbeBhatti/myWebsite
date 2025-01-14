@@ -20,14 +20,14 @@ function Homepage() {
       </section>
       <section className="all-skills">
         <section className="skills-section">
-          <h2>Technical Skills</h2>
+          <h2>Technical Skills/Interests</h2>
           <div className="skills-container">
             <button className="skill-button">Java</button>
-            <button className="skill-button">C</button>
-            <button className="skill-button">HTML</button>
-            <button className="skill-button">CSS</button>
+            <button className="skill-button">C/C++</button>
+            <button className="skill-button">HTML/CSS</button>
             <button className="skill-button">Python</button>
-            <button className="skill-button">Node.js</button>
+            <button className="skill-button">Front End</button>
+            <button className="skill-button">Back End</button>
             </div>
             </section>
             
