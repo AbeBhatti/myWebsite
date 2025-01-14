@@ -9,7 +9,6 @@ body {
     width: 100vw;  
 }
 
-
 .project-card {
     background: rgba(255, 255, 255, 0.1); 
     border: none; 
@@ -39,8 +38,6 @@ body {
     margin-right: 10px;
 }
 
-
-
 .about {
     padding: 20px;
     margin-right: 50%;
@@ -66,7 +63,6 @@ h3 {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
-
 }
 
 .favorite {
@@ -144,8 +140,9 @@ h3 {
 .nav-links a:hover {
     background-color: #aba9a9;
 }
-.all-skills{
-    margin-top:-250px;
+
+.all-skills {
+    margin-top: -250px;
 }
 
 .skills-header {
@@ -158,37 +155,80 @@ h3 {
     margin-left: 50%;
 }
 
-
 .skills-container, .other-skills-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-
+    gap: 10px;
 }
 
 .skill-button, .other-skill-button {
-    background-color: #666;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 12px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    background-color: #666 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 5px !important;
+    padding: 12px 20px !important;
+    cursor: pointer !important; 
+    transition: background-color 0.3s !important;
 }
 
 .skill-button:hover, .other-skill-button:hover {
-    background-color: #888;
+    background-color: #888 !important;
 }
 
 .skill-button:active, .other-skill-button:active {
-    background-color: #444;
+    background-color: #444 !important;
 }
 
 
 .skills-page {
-
     min-height: 100vh;
     background: transparent; 
     padding: 20px; 
+}
+
+.popup-overlay {
+    position: fixed;   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    background-color: #333; 
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.popup h3 {
+    margin: 0 0 10px;
+}
+
+.popup button {
+    background-color: #666;  
+    color: white;
+    border: none;
+    border-radius: 3px;  
+    padding: 8px 16px;  
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;  
+}
+
+.popup button:hover {
+    background-color: #888;  
+}
+
+.popup button:active {
+    background-color: #444;  
 }
