@@ -38,7 +38,7 @@ function Homepage() {
     Python: "Python was the first programming language I learned. I practiced it during my sophomore year of high school, utilizing object-oriented programming to create games and simulations. I continue to improve my Python skills through independent coursework and projects.",
     HTML: "HTML/CSS was new to me until this year when I started learning it over winter break to develop my personal website.",
     "C/C++": "C/C++ is part of my Computer Science and Engineering curriculum. I continue to learn and practice new concepts weekly to assist me in future project development.",
-    FrontEnd: "Though Front-End develop is a new interest of mine, very much enjoy the creative freedom and new opportunities that come with web development.",
+    FrontEnd: "Though Front-End development is a new interest of mine, I very much enjoy the creative freedom and new opportunities that come with web development.",
     BackEnd: "Back-End development has been my main focus for many years, as I have learned how to implement various programming languages and logic to suit my goals.",
     Leadership: "I have held multiple leadership roles in clubs and jobs, but I learned the most from my experience as a Taekwondo instructor.",
     Organization: "My experience in high-pressure work environments has helped me develop strong organizational skills in intense situations.",
@@ -46,50 +46,49 @@ function Homepage() {
     ProblemSolving: "I have always enjoyed solving complex problems and using critical thinking to find efficient solutions. Attending hackathons allows me to further pursue this interest under high stakes and strict deadlines.",
     TimeManagement: "I learned the importance of practice and time management from my years as a musician. Though this required much dedication and patience, I learned how to balance different aspects of my life and manage my time better."
   };
-  
 
   return (
     <div className="home">
       <header className="header">
-        <img src={profilepic} alt="Profile" className="profile-pic" />
+        <img src={profilepic} alt="Profile" className={`profile-pic fade-in fade-in-1`} />
         <div>
-          <h1>Abraham Bhatti</h1>
-          <p><strong>Computer Science & Engineering @ Santa Clara University</strong></p>
+          <h1 className={`fade-in fade-in-1`}>Abraham Bhatti</h1>
+          <p className={`fade-in fade-in-1`}><strong>Computer Science & Engineering @ Santa Clara University</strong></p>
         </div>
       </header>
 
       <section className="about">
-        <h2>About Me</h2>
-        <p><strong>I am an aspiring software engineer at SCU, focused on deepening my technological expertise. I seek valuable internship experience to apply my knowledge in the engineering world. I am passionate about learning from diverse perspectives, expanding my horizons through real-world projects, and connecting with fellow innovators.</strong></p>
+        <h2 className={`fade-in fade-in-2`}>About Me</h2>
+        <p className={`fade-in fade-in-2`}><strong>I am an aspiring software engineer at SCU, focused on deepening my technological expertise...</strong></p>
       </section>
 
       <section className="all-skills">
         <section className="skills-section">
-          <h2>Technical Skills/Interests</h2>
+          <h2 className={`fade-in fade-in-2`}>Technical Skills/Interests</h2>
           <div className="skills-container">
-            <button className="skill-button" onClick={() => handleClick("C/C++")}>C/C++</button>
-            <button className="skill-button" onClick={() => handleClick("Python")}>Python</button>
-            <button className="skill-button" onClick={() => handleClick("Java")}>Java</button>
-            <button className="skill-button" onClick={() => handleClick("HTML")}>HTML/CSS</button>
-            <button className="skill-button" onClick={() => handleClick("BackEnd")}>Back End</button>
-            <button className="skill-button" onClick={() => handleClick("FrontEnd")}>Front End</button>
+            <button className="skill-button fade-in fade-in-2" onClick={() => handleClick("C/C++")}>C/C++</button>
+            <button className="skill-button fade-in fade-in-2" onClick={() => handleClick("Python")}>Python</button>
+            <button className="skill-button fade-in fade-in-2" onClick={() => handleClick("Java")}>Java</button>
+            <button className="skill-button fade-in fade-in-2" onClick={() => handleClick("HTML")}>HTML/CSS</button>
+            <button className="skill-button fade-in fade-in-2" onClick={() => handleClick("BackEnd")}>Back End</button>
+            <button className="skill-button fade-in fade-in-2" onClick={() => handleClick("FrontEnd")}>Front End</button>
           </div>
         </section>
 
         <section className="other-skills-section">
-          <h2>Other Skills</h2>
+          <h2 className={`fade-in fade-in-3`}>Other Skills</h2>
           <div className="other-skills-container">
-            <button className="other-skill-button" onClick={() => handleClick("Leadership")}>Leadership</button>
-            <button className="other-skill-button" onClick={() => handleClick("Organization")}>Organization</button>
-            <button className="other-skill-button" onClick={() => handleClick("Communication")}>Communication</button>
-            <button className="other-skill-button" onClick={() => handleClick("ProblemSolving")}>Problem-Solving</button>
-            <button className="other-skill-button" onClick={() => handleClick("TimeManagement")}>Time Management</button>
+            <button className="other-skill-button fade-in fade-in-3" onClick={() => handleClick("Leadership")}>Leadership</button>
+            <button className="other-skill-button fade-in fade-in-3" onClick={() => handleClick("Organization")}>Organization</button>
+            <button className="other-skill-button fade-in fade-in-3" onClick={() => handleClick("Communication")}>Communication</button>
+            <button className="other-skill-button fade-in fade-in-3" onClick={() => handleClick("ProblemSolving")}>Problem-Solving</button>
+            <button className="other-skill-button fade-in fade-in-3" onClick={() => handleClick("TimeManagement")}>Time Management</button>
           </div>
         </section>
 
         {selectedSkill && (
           <div className="popup-overlay">
-            <div className="popup" ref={popupRef}> {/* Attach ref to the popup */}
+            <div className="popup" ref={popupRef}>
               <h3>{selectedSkill}</h3>
               <p>{skillDescriptions[selectedSkill]}</p>
               <button onClick={closePopup}>Close</button>
@@ -98,9 +97,9 @@ function Homepage() {
         )}
       </section>
 
-      <h3>Favorites:</h3>
+      <h3 className={`fade-in fade-in-4`}>Favorites:</h3>
       <section className="favorite-section">
-        <div className="favorite">
+        <div className="favorite fade-in fade-in-4">
           <div className="favorite-inner">
             <div className="favorite-front">
               (FLIP ME)
@@ -111,7 +110,7 @@ function Homepage() {
             </div>
           </div>
         </div>
-        <div className="favorite">
+        <div className="favorite fade-in fade-in-4">
           <div className="favorite-inner">
             <div className="favorite-front">
               (FLIP ME)
@@ -122,7 +121,7 @@ function Homepage() {
             </div>
           </div>
         </div>
-        <div className="favorite">
+        <div className="favorite fade-in fade-in-4">
           <div className="favorite-inner">
             <div className="favorite-front">
               (FLIP ME)

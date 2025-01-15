@@ -190,7 +190,7 @@ function Projects() {
     return (
         <div className="projects">
             <header><h1>Projects</h1></header>
-            <div className="robot-room">
+            <div className='robot-room fade-in fade-in-1'>
                 <div
                     className="robot"
                     style={{
@@ -243,7 +243,7 @@ function Projects() {
                     <p>Welcome! This maze showcases my different projects. Use the arrow keys to move the robot through the maze and explore my work You can also click on each circle to read about them.Enjoy!</p>
                 </div>
             )}
-            <div className = "RobotInstructions">
+            <div className = 'RobotInstructions fade-in instructions'>
                 <h2>Click/hold the arrow keys to move the robot!</h2>
             </div>
 
