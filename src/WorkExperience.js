@@ -64,7 +64,7 @@ function WorkExperience() {
     }, [selectedJob]);
 
     const handleBackgroundClick = (event) => {
-        if (event.target.className === "modal") {
+        if (event.target === event.currentTarget) {
             handleCloseModal();
         }
     };

@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import "./Homepage.css";
+import './Homepage.css';
 import happyGilmore from './assets/happygilmore.jpeg';
 import hobbyImage from './assets/guitar.jpeg';
 import artistImage from './assets/justice.jpeg';
@@ -87,8 +87,8 @@ function Homepage() {
         </section>
 
         {selectedSkill && (
-          <div className="popup-overlay">
-            <div className="popup" ref={popupRef}>
+          <div className='popup-overlay show'>
+            <div className={`popup popup-fade`} ref={popupRef}>
               <h3>{selectedSkill}</h3>
               <p>{skillDescriptions[selectedSkill]}</p>
               <button onClick={closePopup}>Close</button>
