@@ -39,7 +39,7 @@
 }
 .instructions-popup {
     position: absolute;
-    top: 33%;
+    top: 50%;
     left: 60%;
     transform: translateY(-50%);
     background-color: rgba(102, 96, 96, 0.7);
