@@ -249,19 +249,19 @@ h3 {
   }
   
   .fade-in-1 {
-    animation-delay: 0.2s; 
+    animation-delay: 0.3s; 
   }
   
   .fade-in-2 {
-    animation-delay: 0.6s;  
+    animation-delay: 1s;  
   }
   
   .fade-in-3 {
-    animation-delay: .6s;  
+    animation-delay: 1s;  
   }
   
   .fade-in-4 {
-    animation-delay: 1s;
+    animation-delay: 1.5s;
   }
   
 
