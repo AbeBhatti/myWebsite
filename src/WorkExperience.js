@@ -10,6 +10,22 @@ function WorkExperience() {
 
     const jobs = [
         {
+            title: "Cook",
+            company: "Palmerino’s Deli",
+            date: "February 2022 – August 2022",
+            description: "I delivered exceptional customer service, ensuring a positive dining experience at an Italian deli. I efficiently managed multiple responsibilities, from taking orders to serving food, while maintaining accuracy in transactions. During peak hours, I collaborated closely with team members to optimize restaurant operations, ensuring smooth service and customer satisfaction.",
+            image: palmerinosImage 
+        },
+        
+        {
+            title: "Front of House Cashier/Server",
+            company: "Nick the Greek",
+            date: "January 2023 – February 2024",
+            description: "I strengthened my leadership and interpersonal skills in a fast-paced, collaborative environment. I independently managed most shifts, ensuring cleanliness and efficiently handling both online and in-person orders. I consistently navigated challenges with professionalism, developing the ability to perform under pressure while maintaining a high standard of service.",
+            image: nickImage 
+        },
+        
+        {
             title: "Remote Office Worker",
             company: "Morgan Hill Psychiatry",
             date: "May 2020 - September 2024",
@@ -19,24 +35,12 @@ function WorkExperience() {
         {
             title: "Cashier/Tap Operator",
             company: "High and Mighty Pizza Joint",
-            date: "August 2024 – September 2024 (seasonal)",
+            date: "August 2024 – September 2024",
             description: "I leveraged my leadership skills to mentor new hires at a newly opened restaurant, guiding them through their training and helping them integrate smoothly into the team. This experience allowed me to reflect on my own growth while actively supporting the development of others. In addition to my mentoring responsibilities, I was also in charge of taking orders, coordinating with chefs, and maintaining a clean, welcoming environment that enhanced the overall customer experience.",
             image: pizzaImage 
-        },
-        {
-            title: "Front of House Cashier/Server",
-            company: "Nick the Greek",
-            date: "January 2023 – February 2024",
-            description: "I strengthened my leadership and interpersonal skills in a fast-paced, collaborative environment. I independently managed most shifts, ensuring cleanliness and efficiently handling both online and in-person orders. I consistently navigated challenges with professionalism, developing the ability to perform under pressure while maintaining a high standard of service.",
-            image: nickImage 
-        },
-        {
-            title: "Cook",
-            company: "Palmerino’s Deli",
-            date: "February 2022 – August 2022",
-            description: "I delivered exceptional customer service, ensuring a positive dining experience at an Italian deli. I efficiently managed multiple responsibilities, from taking orders to serving food, while maintaining accuracy in transactions. During peak hours, I collaborated closely with team members to optimize restaurant operations, ensuring smooth service and customer satisfaction.",
-            image: palmerinosImage 
         }
+
+
     ];
 
     const handleCircleClick = (job) => {

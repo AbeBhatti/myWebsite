@@ -265,7 +265,6 @@ h3 {
   }
   
 
-  /* Animation for fading in the popup */
 @keyframes popupFadeIn {
     0% {
       opacity: 0;

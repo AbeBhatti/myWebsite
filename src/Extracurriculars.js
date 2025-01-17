@@ -11,29 +11,34 @@ function Extracurriculars() {
 
     const activities = [
         {
-            title: "ACM Member",
-            description: "As a member of ACM, I actively participate in workshops, hackathons, and other events that foster growth and innovation. ACM has not only broadened my understanding of engineering but also provided the opportunity to connect with like-minded individuals who share my passion and goals. I look forward to continuing my involvement with ACM and aspire to contribute even further by becoming a board member in the near future.",
-            image: acmImage
+            title: "Musician",
+            description: "I played the piano for twelve years, initially learning the basics before dedicating much of my time to teaching myself new songs while continuing formal lessons. Later, I began learning the guitar, applying the skills I had developed as a piano student. Once I mastered the fundamentals, I started writing my own songs and have continued to nurture my passion for music.",
+            image: musicImage
         },
-        {
-            title: "AP Computer Science Teacher's Assistant",
-            description: "During the final semester of my senior year in high school, I sought to refresh and deepen my programming knowledge, having completed all the computer science courses offered. As a Teaching Assistant (TA), I supported fellow students by helping them prepare for tests, debug their code, and nurture their creativity throughout each project.",
-            image: csImage
-        },
+
         {
             title: "Taekwondo Teacher",
             description: "After ten years of training in Taekwondo, I began assisting my instructor with teaching classes. To further develop my communication, organization, and leadership skills, I participated in multiple leadership workshops offered by my Taekwondo studio. Upon earning my second-degree Black Belt, I took on the responsibility of teaching students, helping them refine their skills and progress in the discipline.",
             image: taekwondoImage
         },
-        {
-            title: "Musician",
-            description: "I played the piano for twelve years, initially learning the basics before dedicating much of my time to teaching myself new songs while continuing formal lessons. Later, I began learning the guitar, applying the skills I had developed as a piano student. Once I mastered the fundamentals, I started writing my own songs and have continued to nurture my passion for music.",
-            image: musicImage
-        },
+
         {
             title: "Varsity Soccer Player",
             description: "I played Varsity Soccer throughout middle school and high school, and became team captain in my senior year. When I first started, my knowledge of team sports was limited, but by my junior year, I earned a starting position and began mentoring younger players. My experience, especially during my final two years as a leader, taught me the invaluable importance of teamwork and leadership on and off the field.",
             image: soccerImage
+        },
+        
+        {
+            title: "AP Computer Science Teacher's Assistant",
+            description: "During the final semester of my senior year in high school, I sought to refresh and deepen my programming knowledge, having completed all the computer science courses offered. As a Teaching Assistant (TA), I supported fellow students by helping them prepare for tests, debug their code, and nurture their creativity throughout each project.",
+            image: csImage
+        },
+
+                
+        {
+            title: "ACM Member",
+            description: "As a member of ACM, I actively participate in workshops, hackathons, and other events that foster growth and innovation. ACM has not only broadened my understanding of engineering but also provided the opportunity to connect with like-minded individuals who share my passion and goals. I look forward to continuing my involvement with ACM and aspire to contribute even further by becoming a board member in the near future.",
+            image: acmImage
         }
     ];
 
