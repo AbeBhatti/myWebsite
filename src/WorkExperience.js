@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./WorkExperience.css";
-import nickImage from './assets/nick.jpg';
-import psychiatryImage from './assets/psychiatry.jpg';
+const nickImage = '/nick.jpg';
+const psychiatryImage = '/psychiatry.jpg';
 const pizzaImage = '/pizza.jpg';
 const palmerinosImage = '/palmerinos.jpg';
 const elytra = '/elytra.jpeg';

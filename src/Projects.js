@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Projects.css";
-import robotImage from './assets/robot.png';
-import archeryCover from './assets/archery.png';
-import coenProjectsCover1 from './assets/coenprojects.png';
-import coenProjectsCover2 from './assets/SAL.png';
-import coenProjectsCover3 from './assets/webpic.png';
-import snackBuddy from './assets/snackbuddy.png';
-import ticTacToeImage from './assets/tictactoe.webp';
-import amberSearch from './assets/ambersearch.png';
-import targetImage from './assets/target.png';
+const robotImage = '/robot.png';
+const archeryCover = '/archery.png';
+const coenProjectsCover1 = '/coenprojects.png';
+const coenProjectsCover2 = '/SAL.png';
+const coenProjectsCover3 = '/webpic.png';
+const snackBuddy = '/snackbuddy.png';
+const ticTacToeImage = '/tictactoe.webp';
+const amberSearch = '/ambersearch.png';
+const targetImage = '/target.png';
 
 const MAZE_WIDTH = 500;
 const MAZE_HEIGHT = 400;

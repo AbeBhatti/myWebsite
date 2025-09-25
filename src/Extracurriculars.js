@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./Extracurriculars.css"; 
-import acmImage from './assets/acm.png';
-import taekwondoImage from './assets/taekwondo.jpg'; 
-import musicImage from './assets/music.jpg'; 
-import soccerImage from './assets/soccer.avif';
-import csImage from './assets/cs.avif'; 
+const acmImage = '/acm.png';
+const taekwondoImage = '/taekwondo.jpg'; 
+const musicImage = '/music.jpg'; 
+const soccerImage = '/soccer.avif';
+const csImage = '/cs.avif'; 
 
 function Extracurriculars() {
     const [selectedActivity, setSelectedActivity] = useState(null);

@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; 
 import "./Resume.css";
-import resumeImage from "./assets/resume.pdf";
-import downloadIcon from "./assets/download.webp";
+const resumeImage = "/resume.pdf";
+const downloadIcon = "/download.webp";
 
 
 function Resume() {

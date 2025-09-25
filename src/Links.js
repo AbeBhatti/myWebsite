@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom"; 
 import "./Links.css"; 
-import image1 from "./assets/link.webp"; 
-import image2 from "./assets/resume.webp"; 
-import image3 from "./assets/github.png"; 
+const image1 = "/link.webp"; 
+const image2 = "/resume.webp"; 
+const image3 = "/github.png"; 
 
 function Links() {
     return (
