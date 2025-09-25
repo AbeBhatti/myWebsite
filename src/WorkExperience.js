@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./WorkExperience.css";
-
-// Use public folder paths for images
-const psychiatryImage = '/psychiatry.jpg';
+import nickImage from './assets/nick.jpg';
+import psychiatryImage from './assets/psychiatry.jpg';
 const pizzaImage = '/pizza.jpg';
-const nickImage = '/nick.jpg';
 const palmerinosImage = '/palmerinos.jpg';
 const elytra = '/elytra.jpeg';
 const scupic = '/scu.jpg';
@@ -105,7 +103,7 @@ function WorkExperience() {
             </div>
 
             {selectedJob && (
-                <div className="modal" onClick={handleBackgroundClick}>
+                <div className={`modal ${selectedJob ? "show" : ""}`} onClick={handleBackgroundClick}>
                     <div className="modal-content">
                         <span className="close" onClick={handleCloseModal}>&times;</span>
                         <h2>{selectedJob.company}</h2>

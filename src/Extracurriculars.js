@@ -88,7 +88,7 @@ function Extracurriculars() {
             </div>
 
             {selectedActivity && (
-                <div className="modal" onClick={handleBackgroundClick}>
+                <div className={`modal ${selectedActivity ? "show" : ""}`} onClick={handleBackgroundClick}>
                     <div className="modal-content">
                         <span className="close" onClick={handleCloseModal}>&times;</span>
                         <h2>{selectedActivity.title}</h2>

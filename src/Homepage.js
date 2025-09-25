@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import './Homepage.css';
 
 // Use public folder paths for images
-const profilepic = '/profile.jpg';
+import profilepic from './assets/profile.jpg';
 const happyGilmore = '/happygilmore.jpeg';
 const hobbyImage = '/guitar.jpeg';
 const artistImage = '/justice.jpeg';
