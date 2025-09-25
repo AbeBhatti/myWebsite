@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Additional exclusions
+venv/
+.git_backup/
+package 2.json
+src/assets/
