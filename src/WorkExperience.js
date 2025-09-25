@@ -92,7 +92,7 @@ function WorkExperience() {
     return (
         <div className="work-experience">
             <h1>Work Experience</h1>
-            <h2>Here are some of the positions I've held throughout high school:</h2>
+            <h2>Here are some of the positions I've held throughout my academic career:</h2>
 
             <div className="circles-container">
                 {jobs.map((job, index) => (

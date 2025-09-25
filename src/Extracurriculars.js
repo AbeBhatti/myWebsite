@@ -67,10 +67,11 @@ function Extracurriculars() {
     }, [selectedActivity]);
 
     const handleBackgroundClick = (event) => {
-        if (event.target.className === "modal") {
+        if (event.currentTarget === event.target) {
             handleCloseModal();
         }
     };
+    
 
     return (
         <div className="extracurriculars">
@@ -88,15 +89,16 @@ function Extracurriculars() {
             </div>
 
             {selectedActivity && (
-                <div className={`modal ${selectedActivity ? "show" : ""}`} onClick={handleBackgroundClick}>
-                    <div className="modal-content">
-                        <span className="close" onClick={handleCloseModal}>&times;</span>
-                        <h2>{selectedActivity.title}</h2>
-                        <center><p>{selectedActivity.description}</p></center>
-                        <img src={selectedActivity.image} alt={selectedActivity.title} className="modal-image" />
-                    </div>
-                </div>
-            )}
+    <div className={`modal ${selectedActivity ? "show" : ""}`} onClick={handleBackgroundClick}>
+        <div className="modal-content">
+            <span className="close" onClick={handleCloseModal}>&times;</span>
+            <h2>{selectedActivity.title}</h2>
+            <p>{selectedActivity.description}</p>
+            <img src={selectedActivity.image} alt={selectedActivity.title} className="modal-image" />
+        </div>
+    </div>
+)}
+
         </div>
     );
 }
