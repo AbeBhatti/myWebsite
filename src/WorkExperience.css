@@ -1,0 +1,103 @@
+.work-experience {
+    background: transparent;
+    color: #e0e0e0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 13.5px;
+}
+
+.work-experience h1 {
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 28px; 
+}
+
+.circles-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin: 0 20px; 
+}
+
+.circle:hover {
+    transform: scale(1.1);
+}
+
+.circle-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Modal Background */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeIn .35s forwards;
+}
+
+.modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: rgb(107, 104, 104);
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    max-width: 300px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.modal-image {
+    width: 70%; 
+    margin-top: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}

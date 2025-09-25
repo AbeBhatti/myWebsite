@@ -1,0 +1,282 @@
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #1f1f1f, #4a4a4a);
+    background-size: cover;  
+    background-attachment: fixed;
+    color: #aba9a9; 
+    font-family: Arial, sans-serif;
+    height: 150vh; 
+    width: 100vw;  
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1); 
+    border: none; 
+    padding: 20px; 
+    border-radius: 5px;
+    margin-bottom: 20px; 
+}
+
+.header {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 1.25em;
+    position: relative; 
+}
+
+.profile-container {
+    position: relative;
+}
+
+.profile-pic {
+    width: 250px;
+    height: 240px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px; 
+    left: 20px; 
+    margin-right: 10px;
+}
+
+.about {
+    padding: 20px;
+    margin-right: 50%;
+    text-align: center;
+    line-height: 2;
+}
+
+p1 {
+    font-size: 1.25em;
+}
+
+h2 {
+    color: #aba9a9; 
+    text-align: center;
+}
+
+h3 {
+    color: #aba9a9; 
+    margin-left: 20px;
+}
+
+.favorite-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.favorite {
+    perspective: 1000px; 
+    margin: 0 10px; 
+}
+
+.favorite-inner {
+    position: relative;
+    width: 200px; 
+    height: 300px;
+    transition: transform 0.6s; 
+    transform-style: preserve-3d;
+}
+
+.favorite:hover .favorite-inner {
+    transform: rotateY(180deg); 
+}
+
+.favorite-front, .favorite-back {
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    backface-visibility: hidden; 
+    background: linear-gradient(to top, #1f1f1f, #4a4a4a);
+}
+
+.favorite-front {
+    background-color: #aba9a9; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    font-size: 20px; 
+    color: #949494;
+}
+
+.favorite-back {
+    background-color: #aba9a9; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    color: #aba9a9; 
+    transform: rotateY(180deg);
+}
+
+.favorite-image {
+    width: 100%; 
+    height: 175px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    background-color: #aba9a9;
+}
+
+.all-skills {
+    margin-top: -250px;
+}
+
+.skills-header {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.skills-section, .other-skills-section {
+    padding: 20px;
+    margin-left: 50%;
+}
+
+.skills-container, .other-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skill-button, .other-skill-button {
+    background-color: #666 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 5px !important;
+    padding: 12px 20px !important;
+    cursor: pointer !important; 
+    transition: background-color 0.3s !important;
+}
+
+.skill-button:hover, .other-skill-button:hover {
+    background-color: #888 !important;
+}
+
+.skill-button:active, .other-skill-button:active {
+    background-color: #444 !important;
+}
+
+
+.skills-page {
+    min-height: 100vh;
+    background: transparent; 
+    padding: 20px; 
+}
+
+.popup-overlay {
+    position: fixed;   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    background-color: #333; 
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.popup h3 {
+    margin: 0 0 10px;
+}
+
+.popup button {
+    background-color: #666;  
+    color: white;
+    border: none;
+    border-radius: 3px;  
+    padding: 8px 16px;  
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;  
+}
+
+.popup button:hover {
+    background-color: #888;  
+}
+
+.popup button:active {
+    background-color: #444;  
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);  
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .fade-in-1 {
+    animation-delay: 0.3s; 
+  }
+  
+  .fade-in-2 {
+    animation-delay: 1s;  
+  }
+  
+  .fade-in-3 {
+    animation-delay: 1s;  
+  }
+  
+  .fade-in-4 {
+    animation-delay: 1.5s;
+  }
+  
+
+@keyframes popupFadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8); 
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .popup-fade {
+    animation: popupFadeIn 0.5s ease-out forwards; 
+  }
+  
