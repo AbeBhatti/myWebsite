@@ -1,3 +1,4 @@
+/* Work Experience Page Styles */
 .work-experience {
     background: transparent;
     color: #e0e0e0;
@@ -15,13 +16,15 @@
     font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 40px;
-    font-size: 28px; 
+    font-size: 28px;
 }
 
 .circles-container {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .circle {
@@ -31,11 +34,13 @@
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s;
-    margin: 0 20px; 
+    margin: 0 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .circle:hover {
     transform: scale(1.1);
+    border-color: #aba9a9;
 }
 
 .circle-image {
@@ -57,7 +62,8 @@
     align-items: center;
     opacity: 0;
     visibility: hidden;
-    animation: fadeIn .35s forwards;
+    z-index: 1000;
+    animation: fadeIn 0.35s forwards;
 }
 
 .modal.show {
@@ -66,20 +72,32 @@
 }
 
 .modal-content {
-    background-color: rgb(107, 104, 104);
+    background-color: #333;
+    color: white;
     padding: 20px;
     border-radius: 8px;
     position: relative;
-    max-width: 300px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content h3 {
+    color: #e0e0e0;
+    margin: 0 0 15px;
+    font-size: 20px;
+}
+
+.modal-content p {
+    color: #aba9a9;
+    line-height: 1.6;
+    margin: 10px 0;
 }
 
 .modal-image {
-    width: 70%; 
+    width: 70%;
     margin-top: 20px;
+    border-radius: 5px;
 }
 
 .close {
@@ -89,6 +107,28 @@
     cursor: pointer;
     font-size: 24px;
     color: #fff;
+    transition: color 0.3s;
+}
+
+.close:hover {
+    color: #aba9a9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .circles-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .circle {
+        margin: 10px 0;
+    }
+    
+    .modal-content {
+        max-width: 90%;
+        margin: 20px;
+    }
 }
 
 @keyframes fadeIn {

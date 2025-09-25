@@ -20,4 +20,11 @@ function App() {
           <Route path="/work" element={<WorkExperience />} />
           <Route path="/extracurriculars" element={<Extracurriculars />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="/links" element={<Links />}
+          <Route path="/links" element={<Links />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+}
+
+export default App;

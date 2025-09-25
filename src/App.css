@@ -1,60 +1,155 @@
+/* Global App Styles */
 .App {
   text-align: center;
 }
+
+/* Global Body Styles */
 body {
-  margin-top: 20px; 
-  margin-bottom: 20px;
-  background: linear-gradient(to bottom, #1f1f1f, #4a4a4a); 
-  color: #e0e0e0; 
-  font-family: Arial, sans-serif; 
+  margin: 0;
+  background: linear-gradient(to bottom, #1f1f1f, #4a4a4a);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
   font-size: 16px;
-}
-
-
-
-body {
-    margin: 0;
-    background: linear-gradient(to bottom, #1f1f1f, #4a4a4a); 
-    color: #e0e0e0;
-    font-family: Arial, sans-serif;
-    font-size: 16px; 
-}
-
-
-
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* Global Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+}
+
+/* Global Link Styles */
+a {
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #aba9a9;
+}
+
+/* Global Button Styles */
+button {
+  background-color: #666;
   color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: Arial, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #888;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button:active {
+  background-color: #444;
+}
+
+/* Global Card Styles */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Global Section Styles */
+.section {
+  padding: 20px;
+  min-height: 100vh;
+  background: transparent;
+}
+
+.section h1 {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 28px;
+  color: #e0e0e0;
+}
+
+/* Global Fade In Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.fade-in-1 {
+  animation-delay: 0.3s;
+}
+
+.fade-in-2 {
+  animation-delay: 1s;
+}
+
+.fade-in-3 {
+  animation-delay: 1.5s;
+}
+
+.fade-in-4 {
+  animation-delay: 2s;
+}
+
+/* Global Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  animation: fadeIn 0.35s forwards;
+}
+
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+}
+
+.close:hover {
+  color: #aba9a9;
 }

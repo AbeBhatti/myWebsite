@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
-import "./WorkExperience.css"; 
-import psychiatryImage from './assets/psychiatry.jpg'; 
-import pizzaImage from './assets/pizza.jpg';
-import nickImage from './assets/nick.jpg';
-import palmerinosImage from './assets/palmerinos.jpg'; 
-import elytra  from './assets/elytra.jpeg';
-import scupic from './assets/scu.jpg';
+import "./WorkExperience.css";
+
+// Use public folder paths for images
+const psychiatryImage = '/psychiatry.jpg';
+const pizzaImage = '/pizza.jpg';
+const nickImage = '/nick.jpg';
+const palmerinosImage = '/palmerinos.jpg';
+const elytra = '/elytra.jpeg';
+const scupic = '/scu.jpg';
 
 function WorkExperience() {
     const [selectedJob, setSelectedJob] = useState(null);
